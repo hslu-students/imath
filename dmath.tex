@@ -1,0 +1,46 @@
+\documentclass[a4paper,10pt,smallheadings,twocolumn]{scrartcl}
+
+\usepackage{times}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatimbox}
+\usepackage[autostyle=true,german=quotes]{csquotes}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[top=2cm,right=2cm,bottom=3cm,left=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[lastpage,user]{zref}
+\usepackage{multirow}
+
+\newcommand{\Title}{Diskrete Mathematik}
+\newcommand{\Author}{Patrick Bucher \& Lukas Arnold}
+\newcommand{\Date}{\today}
+
+\title{\Title}
+\date{\Date}
+\author{\Author}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\Title}
+\fancyhead[R]{\Author}
+\fancyfoot[L]{DMATH}
+\fancyfoot[C]{\Date}
+\fancyfoot[R]{Seite \thepage\ von \zpageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\setlength{\columnsep}{1cm}
+\setlength{\parindent}{0cm}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+\tableofcontents
+\clearpage
+
+
+
+\end{document}
